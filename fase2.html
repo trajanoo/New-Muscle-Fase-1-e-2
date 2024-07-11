@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Biologia - Fase 1</title>
+    <link rel="stylesheet" href="fases2.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Criar Tecido Muscular Esquelético</h1>
+        <p>O paciente está com <abbr title="Rabdomiólise é uma condição séria causada por lesão muscular direta. Isso resulta na morte das fibras musculares e liberação de seus conteúdos na corrente sanguínea. Pode levar a complicações sérias, como insuficiência renal." id="rabdomiolise">rabdomiólise</abbr>. <br>Crie um tecido muscular esquelético artificial para ajudá-lo.</p>
+        <div class="dropzone" id="assembly-zone">Área de Montagem</div>
+        <div class="components">
+            <div class="component" draggable="true" id="cell1"><abbr title="Células precursoras dos miócitos, que por sua vez são células musculares maduras. Desempenham um papel fundamental no desenvolvimento e regeneração dos tecidos musculares. " id="fibra1">Mioblastos</abbr></div>
+            <div class="component" draggable="true" id="cell2"><abbr title="Célula responsável pela produção de fibras de colágeno, elastina e outras substâncias da matriz extracelular." id="fibra1">Fibroblasto</abbr></div>
+            <div class="component" draggable="true" id="cell3"><abbr title="Células progenitoras mononucleares encontradas em músculos maduros entre a lâmina basal e o sarcolema. Capazes de se diferenciar e se fundir para aumentar o número de fibras musculares existentes e formar novas fibras." id="fibra1">Célula Satélite</abbr></div>
+        </div>
+        <button id="check-assembly">Verificar</button>
+        <div id="message-assembly"></div>
+    </div>
+    <script src="fase2.js"></script>
+</body>
+</html>

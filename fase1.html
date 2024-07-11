@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Biologia - Fase 1</title>
+    <link rel="stylesheet" href="fases.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Criar Tecido Muscular Cardíaco</h1>
+        <p>O paciente está com <abbr title="A miocardiopatia dilatada é um conjunto de alterações no músculo cardíaco na qual os ventrículos (as duas câmaras inferiores do coração) aumentam de tamanho (dilatam), mas não são capazes de bombear sangue suficiente para satisfazer as necessidades do corpo, resultando em insuficiência cardíaca." id="miocardiopatia">miocardiopatia dilatada</abbr>. <br>Crie um tecido muscular cardíaco artificial para ajudá-lo.</p>
+        <div class="dropzone" id="assembly-zone">Área de Montagem</div>
+        <div class="components">
+            <div class="component" draggable="true" id="cell1"><abbr title="Fibra Muscular Cardíaca" id="fibra1">Cardiomiócito</abbr> </div>
+            <div class="component" draggable="true" id="cell2"><abbr title="Célula responsável pela produção de fibras de colágeno, elastina e outras substâncias da matriz extracelular." id="fibra1">Fibroblasto</abbr></div>
+            <div class="component" draggable="true" id="cell3"><abbr title="Célula achatada de espessura variável que recobre o interior dos vasos sanguíneos" id="fibra1">Célula Endotelial</abbr></div>
+            <div class="component" draggable="true" id="cell4"><abbr title="Malha complexa que preenche o espaço entre as células em todos os tecidos vivos." id="fibra1">Matriz Extracelular</abbr></div>
+        </div>
+        <button id="check-assembly">Verificar</button>
+        <div id="message-assembly"></div>
+    </div>
+    <script src="fase1.js"></script>
+</body>
+</html>

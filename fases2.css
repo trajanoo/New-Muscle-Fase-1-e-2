@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Pixel Emulator';
+    src: url(Pixel\ Emulator.otf) format(opentype) ;
+  }
+  
+  body {
+    font-family: 'Pixel Emulator', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+  }
+  
+  .game-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropzone {
+    width: 350px;
+    height: 200px;
+    margin: 20px auto;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef;
+    flex-direction: column;
+  }
+  
+  .dropzone2{
+        width: 350px;
+        height: 200px;
+        margin: 20px auto;
+        border: 2px dashed #ccc;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e9ecef;
+        background-image: url('muscle.png');
+  }
+  
+  .components {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .component {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    user-select: none;
+    font-size: 10pt;
+  }
+  
+  #message-assembly, #message-muscle {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  #check-assembly{
+    font-family: 'Pixel Emulator';
+    margin-top: 12px;
+  }
+  
+  #check-muscle{
+    font-family: 'Pixel Emulator';
+  }
+  
+  #imgmuscle{
+    height: 200px;
+  }
+  
+  abbr {
+    border-bottom: 1px #000;
+    text-decoration: none;
+    color: #2A9D8F;
+    font-weight: bold; 
+  }
+  
+  abbr[title] {
+    position: relative;
+  }
+  
+  abbr[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 8pt;
+  }
+
+  #fibra1{
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+  }
+  

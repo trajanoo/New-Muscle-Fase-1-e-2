@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Pixel Emulator';
+    src: url(Pixel\ Emulator.otf) format(opentype) ;
+}
+
+body {
+    font-family: 'Pixel Emulator', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.game-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropzone {
+    width: 350px;
+    height: 200px;
+    margin: 20px auto;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef;
+    flex-direction: column;
+}
+
+.dropzone2{
+        width: 350px;
+        height: 200px;
+        margin: 20px auto;
+        border: 2px dashed #ccc;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e9ecef;
+        background-image: url('heart.png');
+}
+
+.components {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.component {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    user-select: none;
+    font-size: 10pt;
+}
+
+#message-assembly, #message-heart {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#check-assembly{
+    font-family: 'Pixel Emulator';
+    margin-top: 12px;
+}
+
+#check-heart{
+    font-family: 'Pixel Emulator';
+}
+
+#imgheart{
+    height: 200px;
+}
+
+#explicacao {
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    padding: 15px;
+    width: 80%;
+    margin: 50px auto;
+    font-family: 'Pixel Emulator', sans-serif;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-size: 10pt;
+    margin-top: 400px;
+
+}
+
+#explicacao::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 10px;
+    border-right: 10px;
+    border-bottom: 10px solid #f0f0f0;
+}
+
+.hidden {
+    display: none;
+}
+
+#médico{
+    height: 300px;
+    position: absolute;
+    left: 800px;
+    top: 152px;
+}
+
+#avançar{
+    position: absolute;
+    top: 608px;
+    left: 1070px;
+    font-family: Pixel Emulator;
+    font-size: 12px;
+}
+
+#avançar2{
+    position: absolute;
+    top: 590px;
+    left: 1070px;
+    font-family: Pixel Emulator;
+    font-size: 12px;
+}
+
+#miocardiopatia {
+    border-bottom: 1px #000;
+    text-decoration: none;
+    color: #2A9D8F; 
+    font-weight: bold;
+  
+}
+
+#miocardiopatia[title] {
+    position: relative;
+}
+
+#miocardiopatia[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 8pt;
+}
+
+#fibra1{
+  text-decoration: none;
+  font-weight: normal;
+}
