@@ -1,3 +1,12 @@
+const dialog = document.querySelector("dialog")
+
+function abrirDialog(){
+    dialog.showModal();
+}
+function fecharDialog(){
+    dialog.close()
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const components = document.querySelectorAll('.component');
     const assemblyZone = document.getElementById('assembly-zone');
@@ -42,6 +51,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             messageAssembly.textContent = 'Por favor, adicione todas as células necessárias para criar o tecido muscular.';
             messageAssembly.style.color = 'red';
         }
+        
         
     }
 });
