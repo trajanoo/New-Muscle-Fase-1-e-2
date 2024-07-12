@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             messageAssembly.textContent = 'Por favor, adicione todas as células necessárias para criar o tecido muscular.';
             messageAssembly.style.color = 'red';
         }
+        
     }
 });
 

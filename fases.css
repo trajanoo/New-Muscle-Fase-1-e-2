@@ -166,3 +166,10 @@ body {
   text-decoration: none;
   font-weight: normal;
 }
+  #option {
+    position: absolute;
+    width: 50px;
+    top: 580px;
+    right: 10px;
+  
+}
