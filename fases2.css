@@ -111,4 +111,60 @@
     color: #000;
     font-weight: normal;
   }
+
+  
+#option {
+  position: absolute;
+  width: 50px;
+  top: 10px;
+  left: 10px;
+
+}
+
+#option:active {
+  transform: scale(1.2);
+}
+
+dialog {
+  position: relative;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  font-size: 15px;
+  height: 370px;
+  text-decoration: none;
+  box-shadow: 2px 2px 20px rgb(85, 85, 85);
+}
+
+#botoes {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 10px 0px;
+  text-decoration: none;
+}
+
+#botoes > button {
+  font-family: 'Pixel Emulator';
+  padding: 15px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#botoes button:active {
+  transform: scale(1.1);
+}
+
+#botoes button:hover {
+  background-color: #d8d8d8;
+}
+
+#botoes a {
+  color: #000;
+  text-decoration: none;
+
+}
+
+
   

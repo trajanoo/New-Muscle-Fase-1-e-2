@@ -1,3 +1,12 @@
+const dialog = document.querySelector("dialog")
+
+function abrirDialog(){
+    dialog.showModal();
+}
+function fecharDialog(){
+    dialog.close()
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const tissue = document.getElementById('tissue');
     const heartZone = document.getElementById('heart-zone');

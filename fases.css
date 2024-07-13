@@ -180,11 +180,13 @@ body {
 
 dialog {
     position: relative;
+    border-radius: 10px;
     text-align: center;
     width: 300px;
     font-size: 15px;
-    height: 450px;
+    height: 370px;
     text-decoration: none;
+    box-shadow: 2px 2px 20px rgb(85, 85, 85);
 }
 
 #botoes {
@@ -208,7 +210,7 @@ dialog {
 }
 
 #botoes button:hover {
-    background-color: #e4e4e4 ;
+    background-color: #d8d8d8;
 }
 
 #botoes a {

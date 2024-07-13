@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="fases.css">
 </head>
 <body>
+    
     <div class="game-container">
         <h1>Implantar Tecido no Coração</h1>
         <p>Mova o tecido muscular cardíaco criado para o coração do paciente.</p>
@@ -19,6 +20,20 @@
         <button id="check-heart">Verificar</button>
         <div id="message-heart"></div>
     </div>
+
+    
+    <img id="option" src="pixel-art-settings-button-with-gear-icon-for-8bit-game-on-white-background-vector.jpg" onclick="abrirDialog()" alt="">
+        
+</div>
+<dialog>
+    <h1>CONFIGURAÇÕES</h1>
+    <div id="botoes" >
+    <button id onclick="fecharDialog()">Continuar</button>
+    <button><a href="fases.html">Fases</a></button>         
+    <button><a href="menu.html">Início</a></button>  
+</div>
+</dialog>
+  
     <script src="fase1pt2.js"></script>
 </body>
 </html>

@@ -1,4 +1,16 @@
+
+const dialog = document.querySelector("dialog")
+
+function abrirDialog(){
+    dialog.showModal();
+}
+function fecharDialog(){
+    dialog.close()
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
+    
+    
     const components = document.querySelectorAll('.component');
     const assemblyZone = document.getElementById('assembly-zone');
     const checkAssemblyButton = document.getElementById('check-assembly');
