@@ -42,6 +42,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (items.length === 1) {
             messageMuscle.textContent = 'Ótimo! Você implantou o tecido no músculo com sucesso.';
             messageMuscle.style.color = 'green';
+            setTimeout(() => {
+                window.location.href = 'fase3.html';
+            }, 2000);
         } else {
             messageMuscle.textContent = 'O tecido ainda não está completo. Crie o tecido primeiro antes de implantá-lo.';
             messageMuscle.style.color = 'red';

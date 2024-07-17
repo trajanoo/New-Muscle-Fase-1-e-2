@@ -47,9 +47,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (items.length === 3) {
             messageAssembly.textContent = 'Parabéns! Você criou um tecido muscular esquelético artificial de alta qualidade.';
             messageAssembly.style.color = 'green';
-            setTimeout(() => {
-                window.location.href = 'fase2pt2.html';
-            }, 2000);
+            c
         } else {
             messageAssembly.textContent = 'Por favor, adicione todas as células necessárias para criar o tecido muscular.';
             messageAssembly.style.color = 'red';
