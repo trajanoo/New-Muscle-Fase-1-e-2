@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Pixel Emulator';
-  src: url(Pixel\ Emulator.otf) format(opentype) ;
+  src: url(Pixel\ Emulator.otf) format('opentype');
 }
 
 * {
@@ -12,19 +12,28 @@
 
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   background-color: darkcyan;
-
+  padding-top: 20px;
 }
+
+h1#titulo {
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .wrapper {
-  height: 400px;
+  height: 500px;
   width: 400px;
   padding: 25px;
   background-color: #fff;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
+
 .cards, .card, .view {
   display: flex;
   align-items: center;
@@ -37,11 +46,12 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .cards .card {
   cursor: pointer;
   position: relative;
   perspective: 800px;
-  transform-style:preserve-3d;
+  transform-style: preserve-3d;
   height: calc(100% / 4 - 10px);
   width: calc(100% / 4 - 10px);
 }
@@ -58,13 +68,16 @@ body {
   transition: transform 0.25s linear;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
+
 .card .front-view span {
   color: cadetblue;
   font-size: 40px;
 }
+
 .card .back-view {
   transform: rotateY(-180deg);
 }
+
 .card .back-view img {
   max-width: 45px;
 }
@@ -75,4 +88,55 @@ body {
 
 .card.flip .back-view {
   transform: rotateY(0);
+}
+
+#option {
+  position: fixed; /* Mudado de absolute para fixed */
+  width: 50px;
+  top: 20px; /* Ajustado para não ficar colado no topo */
+  left: 20px; /* Ajustado para não ficar colado na borda esquerda */
+}
+#option:active {
+  transform: scale(1.2);
+}
+
+dialog {
+  position: relative;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  font-size: 15px;
+  height: 370px;
+  text-decoration: none;
+  box-shadow: 2px 2px 20px rgb(85, 85, 85);
+}
+
+#botoes {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 10px 0px;
+  text-decoration: none;
+}
+
+#botoes > button {
+  font-family: 'Pixel Emulator';
+  padding: 15px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#botoes button:active {
+  transform: scale(1.1);
+}
+
+#botoes button:hover {
+  background-color: #d8d8d8;
+}
+
+#botoes a {
+  color: #000;
+  text-decoration: none;
+
 }
